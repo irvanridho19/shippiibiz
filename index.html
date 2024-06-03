@@ -1,27 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Bootstrap 5 Simple Starter</title>
-  </head>
-  <body>
-    <div
-      class="container d-flex flex-column align-items-center justify-content-center text-center vh-100 w-50"
-    >
-      <h1 class="text-primary">
-        <i class="fa fa-star"></i> ShippiiBIZ Landing Page
-      </h1>
-      <p>
-        This is a boilerplate for creating and customizing ShippiiBIZ Website.
-      </p>
-    </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <title>ShippiiBIZ - Shippiing Made Easy!</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Hero -->
+  <section class="hero-shippii">
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo/logo-white.png" alt="Logo ShippiiBIZ" style="height: 48px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link shippii-text-white active" aria-current="page"
+                href="https://shippiibiz.africa">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link shippii-text-white" href="#about">About Us</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link shippii-text-white" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="btn shippii-btn-secondary shippii-text-white" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container d-flex align-items-center vh-100">
+      <div class="row d-flex align-items-center" data-aos="fade-right">
+        <div class="col-lg-8 col-12">
+          <div class="big-text shippii-text-white">
+            Reliable and efficient courier service for <span class="color-green">your business</span>.
+          </div>
+          <div class="subtext-hero mt-4 shippii-text-white">
+            The seamless transportation of parcels and
+            stock between South Africa and Eswatini.
+          </div>
+          <a href="#" class="btn shippii-btn-primary mt-4">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <!-- ABOUT -->
+  <section class="featured" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-6">
+          <div class="section-title shippii-text-black text-center">
+            About Us
+          </div>
+          <div class="mt-4 text-center">
+            <img src="assets/logo/logo-black.png" alt="Logo Shippii Black" style="height: 96px;">
+          </div>
+        </div>
+      </div>
+      <hr class="divider-orange my-4" />
+      <div class="row">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-black">
+            Your Trusted Courier Service for South Africa and Eswatini.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12 col-12">
+          <div class="default-body shippii-text-black">
+            <span class="fw-bold">With ShippiiBiz</span>, we understand the importance of timely and secure deliveries
+            in today’s fast-paced business
+            environment. Our service is designed exclusively for businesses that ship stock and parcels between South
+            Africa and Eswatini, providing you with the peace of mind and convenience you deserve.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-black">
+            Benefits of our courier service:
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-6 col-6 mt-3">
+          <div class="box border-orange">
+            <div class="box-content">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/benefit-1.png" alt="Icon">
+                <div class="mx-3">
+                  <div class="default-title shippii-text-black">
+                    Flexible Affordable Pricing
+                  </div>
+                </div>
+              </div>
+              <div class="content mt-4">
+                <div class="default-body shippii-text-black">
+                  We offer a range of flexible rates and monthly packages to suit your unique business needs. Our
+                  monthly packages are designed on the number of shipments and the maximum monthly weight you require.
+                  Whether you are a small enterprise or a large corporation, we have the perfect courier solution.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 mt-3">
+          <div class="box border-green">
+            <div class="box-content">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/benefit-2.png" alt="Icon">
+                <div class="mx-3">
+                  <div class="default-title shippii-text-black">
+                    Reliable Transportation
+                  </div>
+                </div>
+              </div>
+              <div class="content mt-4">
+                <div class="default-body shippii-text-black">
+                  With our extensive network and logistics experience, we ensure your shipments are transported safely
+                  and efficiently. From collection to delivery, we handle every step of the process with the utmost
+                  care, guaranteeing the integrity of your parcels and stock.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 mt-3">
+          <div class="box border-green">
+            <div class="box-content">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/benefit-3.png" alt="Icon">
+                <div class="mx-3">
+                  <div class="default-title shippii-text-black">
+                    Efficient Customs Clearance
+                  </div>
+                </div>
+              </div>
+              <div class="content mt-4">
+                <div class="default-body shippii-text-black">
+                  Navigating customs procedures can be a complex task. Our dedicated team of experts will assist you
+                  with customs clearance, ensuring smooth passage for your shipments across the South Africa-Eswatini
+                  border. Say goodbye to delays and paperwork headaches!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 mt-3">
+          <div class="box border-orange">
+            <div class="box-content">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/benefit-4.png" alt="Icon">
+                <div class="mx-3">
+                  <div class="default-title shippii-text-black">
+                    Exceptional Customer Support & Tracking
+                  </div>
+                </div>
+              </div>
+              <div class="content mt-4">
+                <div class="default-body shippii-text-black">
+                  With our extensive network and logistics experience, we ensure your shipments are transported safely
+                  and efficiently. From collection to delivery, we handle every step of the process with the utmost
+                  care, guaranteeing the integrity of your parcels and stock.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End ABOUT -->
+
+  <!-- SOCIAL PROOF -->
+  <section class="records">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12 col-12">
+          <div class="default-title shippii-text-white">
+            Within our distribution network, we have an array of vehicles<br /> from motorbikes to vans, and trucks.
+          </div>
+          <div class="mt-3 big-text shippii-text-white">
+            Our delivery network handles<br />
+            <span class="color-green">OVER</span> <span class="color-orange">10,000 PARCELS</span> <br />
+            on a monthly basis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SOCIAL PROOF -->
+
+  <!-- SERVICE FLEXI -->
+  <section class="service-1" id="services">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-12">
+          <div class="section-title shippii-text-black">
+            Our Services
+          </div>
+          <div class="mt-4 filled-text-green">
+            <div class="big-text shippii-text-white">
+              ShippiiBiz Flexi
+            </div>
+          </div>
+          <div class="mt-4 section-title shippii-text-black">
+            About the service
+          </div>
+          <div class="mt-4 default-body shippii-text-black">
+            We understand that businesses often have varying shipping needs and may not require a monthly rate service.
+            That’s why we offer a flexible and convenient on-demand solution designed specifically for businesses that
+            ship parcels on an ad-hoc basis.
+          </div>
+        </div>
+        <div class="col-lg-5 col-12">
+          <img src="assets/image/flexi-image.png" alt="Services" class="w-100 obj-fit">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-black text-center">
+            How <span class="color-green">ShippiiBiz Flexi</span> works
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 align-items-center">
+        <div class="col-lg-5">
+          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit">
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="box border-default">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/flexi-1.png" alt="Icons Flexi">
+              <div class="default-title color-green">
+                1. Sign Up
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Contact our customer support on (+268) 7656 2365 or email us at admin@shippiibizafrica.com requesting
+              information for our ShippiiBiz Flexi service. Our friendly team will guide you through the process and get
+              you started.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/flexi-2.png" alt="Icons Flexi">
+              <div class="default-title color-green">
+                2. Shipment Booking
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              When a shipment is ready to be transported between Eswatini and South Africa, call our customer support
+              (+268) 7656 2365 or send us an email to admin@ shippiibizafrica.com and book a shipment. Provide the
+              necessary information; collection and delivery address, weight, dimensions and any special instructions.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/flexi-3.png" alt="Icons Flexi">
+              <div class="default-title color-green">
+                3. Invoicing
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              An invoice will be sent to you with your shipping fees and customs fees. Once an invoice is accepted and
+              paid, we will then process your shipment.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/flexi-4.png" alt="Icons Flexi">
+              <div class="default-title color-green">
+                4. Collection and Transportation
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Our team will arrange for the collection and delivery of your shipment and handle your customs process.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 col-12">
+          <div class="noteview w-100 text-center">
+            <div class="section-title color-green">
+              FREE CONSOLIDATION:
+            </div>
+            <div class="mt-2 default-title shippii-text-black">
+              COMBINE MULTIPLE CONSIGNMENTS INTO ONE SHIPMENT, <br />SAVING YOU UP TO 60% ON SHIPPING FEES.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider-green my-4" />
+      <div class="row text-center">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-black">
+            Shipment Fees
+          </div>
+        </div>
+        <div class="col-lg-12 col-12">
+          <div class="main-title color-green">
+            South Africa (Gauteng) to Eswatini
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="table-success">&nbsp;</th>
+                <th scope="col" class="table-success">Parcel Weight</th>
+                <th scope="col" class="table-success">Shipping Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="section-title shippii-text-black"
+                  style="vertical-align: middle; text-align: center; width: 260px;">Actual <br />Weight</td>
+                <td class="section-title color-green">0,1 to 10 Kgs</td>
+                <td class="section-title color-green">E470</td>
+              </tr>
+              <tr>
+                <td class="table-success section-title shippii-text-white bg-green">Above 10 Kgs</td>
+                <td class="table-success default-body shippii-text-white bg-green">(Actual weight minus 10 kgs) x E1.70
+                  + E470.00
+                  <br />
+                  <span class="fw-bold">Example</span><br />Chargeable Actual weight: 100 kgs<br />Fees: (100kgs -
+                  10kgs) x E1.70 + E470.0 = E623.00
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="table-success">&nbsp;</th>
+                <th scope="col" class="table-success">Parcel Weight</th>
+                <th scope="col" class="table-success">Shipping Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="section-title shippii-text-black"
+                  style="vertical-align: middle; text-align: center; width: 260px;">Volumetric <br />Weight</td>
+                <td class="section-title color-green">0,1 to 10 Kgs</td>
+                <td class="section-title color-green">E470</td>
+              </tr>
+              <tr>
+                <td class="table-success section-title shippii-text-white bg-green">Above 10 Kgs</td>
+                <td class="table-success default-body shippii-text-white bg-green">((length x breadth x height)/3000)
+                  minus
+                  10kgs) x E1.70 + E470.00
+                  <br />
+                  <span class="fw-bold">Example</span><br />Chargeable Volumetric Weight:<br />(60 cm x 60 cm x 60
+                  cm)/3000 = 72 Kgs<br />Fees: (72kgs - 10kgs) x E1.70 + E470.00 = E575.40
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="default-body shippii-text-black mt-4">
+        <span class="color-orange fw-bold">NOTE:</span> The chargeable weight of your shipment will always be calculated
+        on whichever is greater: the actual
+        weight or volumetric weight.
+      </div>
+      <div class="mt-4">
+        <div class="noteview w-100 text-center">
+          <div class="default-title shippii-text-black">
+            First collection free. Thereafter, it’s E250.00 per collection.
+          </div>
+        </div>
+        <div class="noteview w-100 text-center mt-2">
+          <div class="default-title shippii-text-black">
+            CUSTOMS DECLARATION FEES PER INVOICE: <span class="color-orange">FROM E300.00</span>
+          </div>
+        </div>
+      </div>
+      <hr class="divider-green my-4" />
+      <div class="row text-center">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-black">
+            Shipment Fees
+          </div>
+        </div>
+        <div class="col-lg-12 col-12">
+          <div class="main-title color-orange">
+            Eswatini to South Africa (Gauteng)
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="table-warning">&nbsp;</th>
+                <th scope="col" class="table-warning">Parcel Weight</th>
+                <th scope="col" class="table-warning">Shipping Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="section-title shippii-text-black"
+                  style="vertical-align: middle; text-align: center; width: 260px;">Actual <br />Weight</td>
+                <td class="section-title color-orange">0,1 to 10 Kgs</td>
+                <td class="section-title color-orange">E640</td>
+              </tr>
+              <tr>
+                <td class="table-warning section-title shippii-text-white bg-orange">Above 10 Kgs</td>
+                <td class="table-warning default-body shippii-text-white bg-orange">(Actual weight minus 10 kgs) x E2.10
+                  + E640.00
+                  <br />
+                  <span class="fw-bold">Example</span><br />Chargeable Actual weight: 100 kgs<br />Fees: (100kgs -
+                  10kgs) x E2.10 + E640.0 = E829.00
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="table-warning">&nbsp;</th>
+                <th scope="col" class="table-warning">Parcel Weight</th>
+                <th scope="col" class="table-warning">Shipping Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="section-title shippii-text-black"
+                  style="vertical-align: middle; text-align: center; width: 260px;">Volumetric <br />Weight</td>
+                <td class="section-title color-orange">0,1 to 10 Kgs</td>
+                <td class="section-title color-orange">E640</td>
+              </tr>
+              <tr>
+                <td class="table-warning section-title shippii-text-white bg-orange">Above 10 Kgs</td>
+                <td class="table-warning default-body shippii-text-white bg-orange">((length x breadth x height)/3000)
+                  minus
+                  10kgs) x E2.10 + E640.00
+                  <br />
+                  <span class="fw-bold">Example</span><br />Chargeable Volumetric Weight:<br />(60 cm x 60 cm x 60
+                  cm)/3000 = 72 Kgs<br />Fees: (72kgs - 10kgs) x E2.10 + E640.00 = E791.20
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="default-body shippii-text-black mt-4">
+        <span class="color-orange fw-bold">NOTE:</span> The chargeable weight of your shipment will always be calculated
+        on whichever is greater: the actual
+        weight or volumetric weight.
+      </div>
+      <div class="mt-4">
+        <div class="noteview w-100 text-center">
+          <div class="default-title shippii-text-black">
+            First collection free. Thereafter, it’s E250.00 per collection.
+          </div>
+        </div>
+        <div class="noteview w-100 text-center mt-2">
+          <div class="default-title shippii-text-black">
+            CUSTOMS DECLARATION FEES PER INVOICE: <span class="color-orange">FROM E550.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SERVICE FLEXI -->
+
+  <!-- SERVICE MONTHLY -->
+  <section class="service-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-12">
+          <div class="section-title shippii-text-white">
+            Our Services
+          </div>
+          <div class="mt-4 filled-text-orange">
+            <div class="big-text shippii-text-white">
+              ShippiiBiz Monthly
+            </div>
+          </div>
+          <div class="mt-4 section-title shippii-text-white">
+            About the service
+          </div>
+          <div class="mt-4 default-body shippii-text-white">
+            Our premium monthly packages are designed specifically for businesses that have regular and consistent
+            parcel shipping needs. With ShippiiBiz Monthly, you can enjoy a range of benefits and cost savings while
+            ensuring a reliable and efficient shipping process.
+          </div>
+        </div>
+        <div class="col-lg-5 col-12">
+          <img src="assets/image/monthly-image.png" alt="Services" class="w-100 obj-fit">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-white text-center">
+            How <span class="color-orange">ShippiiBiz Monthly</span> works
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-5">
+          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit rounded">
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="box border-default">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/monthly-1.png" alt="Icons Flexi">
+              <div class="default-title color-orange">
+                1. Choose a package
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Select the subscription package that best suits your business needs based on the
+              number of shipments and maximum weight per month. We offer different packages
+              with varying parameters to accommodate businesses of all sizes.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/monthly-2.png" alt="Icons Flexi">
+              <div class="default-title color-orange">
+                2. Sign Up
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Contact our customer support on (+268) 7656 2365 or email us at admin@shippiibizafrica.com requesting
+              information for our ShippiiBiz Monthly service. Our friendly team will guide you through the process and
+              get you started.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/monthly-3.png" alt="Icons Flexi">
+              <div class="default-title color-orange">
+                3. Monthly Payment
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Pay your monthly package fee by the 1st of every month to have access to your
+              logistics solutions.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/monthly-4.png" alt="Icons Flexi">
+              <div class="default-title color-orange">
+                4. Booking a Shipment
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              When a shipment is ready to be transported between Eswatini and South Africa, call our customer care
+              (+268) 7656 2365 or send us an email at admin@shippiibizafrica.com and book a shipment. Provide the
+              necessary information; collection and delivery address, weight, dimensions and any special instructions.
+            </div>
+          </div>
+          <div class="box border-default mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/monthly-5.png" alt="Icons Flexi">
+              <div class="default-title color-orange">
+                5. Collection and Transportation
+              </div>
+            </div>
+            <div class="mt-4 default-body shippii-text-black">
+              Our team will arrange for the collection and delivery of your shipment and handle your
+              customs process.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 col-12">
+          <div class="noteview w-100 text-center">
+            <div class="section-title color-orange">
+              FREE CONSOLIDATION:
+            </div>
+            <div class="mt-2 default-title shippii-text-black">
+              COMBINE MULTIPLE CONSIGNMENTS INTO ONE SHIPMENT, <br />SAVING YOU UP TO 60% ON SHIPPING FEES.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider-orange my-4" />
+      <div class="row text-center">
+        <div class="col-lg-12 col-12">
+          <div class="section-title shippii-text-white">
+            Packages
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="bg-transparent shippii-text-white default-title">PACKAGES</th>
+                <th scope="col" class="bg-green default-title shippii-text-white text-center">ONE</th>
+                <th scope="col" class="bg-orange default-title shippii-text-white text-center">TWO</th>
+                <th scope="col" class="table-secondary default-title text-center">THREE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Max Actual
+                  Weight (kg) <br />per month</td>
+                <td class="section-title table-success color-green text-center">100 Kgs</td>
+                <td class="section-title table-warning color-orange text-center">500 Kgs</td>
+                <td class="section-title shippii-text-black text-center">1.500 Kgs</td>
+              </tr>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Max
+                  Volumetric Weight (kg)* <br />per month</td>
+                <td class="section-title table-success color-green text-center">100 Kgs</td>
+                <td class="section-title table-warning color-orange text-center">500 Kgs</td>
+                <td class="section-title shippii-text-black text-center">1.500 Kgs</td>
+              </tr>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Lead
+                  time<br />per delivery</td>
+                <td class="section-title table-success color-green text-center">48 hours</td>
+                <td class="section-title table-warning color-orange text-center">48 hours</td>
+                <td class="section-title shippii-text-black text-center">48 hours</td>
+              </tr>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Max
+                  orders<br />per month</td>
+                <td class="section-title table-success color-green text-center">2</td>
+                <td class="section-title table-warning color-orange text-center">4</td>
+                <td class="section-title shippii-text-black text-center">8</td>
+              </tr>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Customs
+                  fees<br />per invoice</td>
+                <td class="section-title table-success color-green text-center">
+                  <div>
+                    E300.00
+                  </div>
+                  <div class="small-body">maximum invoice value E15,000.00 thereafter 2% of the invoice value</div>
+                </td>
+                <td class="section-title table-warning color-orange text-center">
+                  <div>
+                    E250.00
+                  </div>
+                  <div class="small-body">maximum invoice value E25,000.00 thereafter 1.5% of the invoice value</div>
+                </td>
+                <td class="section-title shippii-text-black text-center">
+                  <div>
+                    E200.00
+                  </div>
+                  <div class="small-body">maximum invoice value E45,000.00 thereafter 1% of the invoice value</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="default-body bg-transparent shippii-text-white" style="vertical-align: middle;">Rate<br />per
+                  month</td>
+                <td class="section-title table-success color-green text-center">
+                  <div>
+                    E990.00
+                  </div>
+                  <div class="small-body fw-bold">PER MONTH</div>
+                </td>
+                <td class="section-title table-warning color-orange text-center">
+                  <div>
+                    E2,150.00
+                  </div>
+                  <div class="small-body fw-bold">PER MONTH</div>
+                </td>
+                <td class="section-title shippii-text-black text-center">
+                  <div>
+                    E4,350.00
+                  </div>
+                  <div class="small-body fw-bold">PER MONTH</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="default-body color-green fw-bold">
+          *Volumetric Weight formula = (length x breadth x height) divided by 3000).
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12 col-12">
+          <div class="noteview w-100 text-center">
+            <div class="default-title color-orange">
+              Formula for Volumetric Weight: (length x breadth x height) divided by 3000 <br />
+              <span class="shippii-text-black">e.g. (60cm x 60cm x 60cm)/3000 = 72 Kg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="default-body shippii-text-white">
+          <span class="fw-bold color-orange">NOTE:</span> The chargeable weight of your shipment will always be
+          calculated on whichever
+          is greater: the actual weight or volumetric weight.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SERVICE MONTHLY -->
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-12">
+          <div class="section-title shippii-text-black">
+            Contact Us
+          </div>
+          <div class="default-body shippii-text-black mt-4">
+            Experience the convenience, reliability, and cost-effectiveness of ShippiBiz today. Let us simplify your
+            cross-border logistics, so you can focus on what matters most – <span class="color-green fw-bold">GROWING
+              YOUR BUSINESS</span>.
+          </div>
+          <div class="mt-4 color-orange default-body">
+            Contact us now to discuss the best solution
+            for your business:
+          </div>
+          <div class="mt-3">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/email.png" alt="Email Icon">
+              <div class="mx-2 shippii-text-black default-body"><a href="mailto:admin@shippiibiz.africa"
+                  class="btn-link fw-bold color-orange">admin@shippiibiz.africa</a></div>
+            </div>
+            <div class="d-flex align-items-start mt-4">
+              <img src="assets/icons/call.png" alt="Call Icon">
+              <div class="mx-2">
+                <div class="d-block">
+                  <div class="shippii-text-black default-body">
+                    <span class="fw-bold">Eswatini</span> - (+268) 76562365
+                  </div>
+                  <div class="shippii-text-black default-body">
+                    <span class="fw-bold">South Africa</span> - (+27) 815952104
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <img src="assets/image/contact-us.png" alt="Contact Image" class="w-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-12 text-center">
+          <img src="assets/logo/logo-black.png" alt="Logo" class="w-75">
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-3 col-4">
+          <div class="small-body shippii-text-black fw-bold text-center">
+            Powered by:
+          </div>
+          <a href="https://shippii.africa">
+            <img src="assets/logo/shippii-africa.png" alt="Logo Africa" class="w-100">
+          </a>
+        </div>
+      </div>
+      <hr class="divider-orange" />
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-6">
+          <div class="default-body shippii-text-black text-center">
+            Copyright <span id="spanYear"></span> Shippii Africa
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

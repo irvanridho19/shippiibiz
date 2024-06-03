@@ -1,1 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body,
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
+  scroll-behavior: smooth;
+}
 
+:root {
+  --primaryColor: #F7941C;
+  --secondaryColor: #2BB673;
+  --white: #fefefe;
+  --black: #4A4A4A;
+}
+
+.big-text {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 150%;
+}
+
+.bg-green {
+  background-color: var(--secondaryColor) !important;
+}
+
+.bg-orange {
+  background-color: var(--primaryColor) !important;
+}
+
+.subtext-hero {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.shippii-text-white {
+  color: var(--white) !important;
+}
+
+.shippii-text-black {
+  color: var(--black) !important;
+}
+
+.color-orange {
+  color: var(--primaryColor) !important;
+}
+
+.color-green {
+  color: var(--secondaryColor) !important;
+}
+
+.shippii-btn-primary {
+  padding: 12px 48px;
+  background-color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.shippii-btn-secondary {
+  padding: 12px 24px;
+  background-color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--white);
+}
+
+hr.divider-orange {
+  border-top: 8px solid #F7941C;
+  width: 100%;
+}
+
+hr.divider-green {
+  border-top: 8px solid #2BB673;
+  width: 100%;
+}
+
+.filled-text-green {
+  padding: 8px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--secondaryColor);
+  border-radius: 8px;
+}
+
+.filled-text-orange {
+  padding: 8px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+}
+
+.service-title {
+  color: #FFF;
+  font-size: 52px;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.main-title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.default-body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.box {
+  background: var(--white);
+  padding: 16px;
+  height: 100%;
+}
+
+.border-orange {
+  border-radius: 8px;
+  border: 4px solid #EB983E;
+}
+
+.border-green {
+  border-radius: 8px;
+  border: 4px solid #2BB673;
+}
+
+.border-default {
+  border-radius: 8px;
+  border: 4px solid #D8D8D8;
+}
+
+.default-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-bottom: 1px solid --white;
+}
+.navbar .nav-item {
+  font-size: 1rem;
+}
+
+.hero-shippii {
+  background-image: url("../assets/background/hero-background.png");
+}
+
+.featured {
+  background-image: url(../assets/background/background-about.png);
+  padding: 100px 0;
+}
+
+.records {
+  padding: 64px 0;
+  background: url(../assets/background/background-highlight.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-1 {
+  padding: 64px 0;
+  background: url(../assets/background/background-flexi.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.service-1 .obj-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-1 .filled-text-green {
+  width: max-content;
+}
+.service-1 .box {
+  height: max-content;
+}
+.service-1 .noteview {
+  padding: 16px;
+  border-radius: 8px;
+  background: #F2F3F4;
+}
+
+.service-2 {
+  padding: 64px 0;
+  background: url("../assets/background/background-monthly.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.service-2 .obj-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-2 .filled-text-orange {
+  width: max-content;
+}
+.service-2 .box {
+  height: max-content;
+}
+.service-2 .noteview {
+  padding: 16px;
+  border-radius: 8px;
+  background: #F2F3F4;
+}
+
+.small-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.contact {
+  padding: 64px 0;
+}
+
+footer {
+  background: url(../assets/background/background-footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 0;
+}
