@@ -154,16 +154,22 @@ hr.divider-green {
 }
 
 .navbar-shippii {
-  background: transparent;
+  background-color: transparent;
+  box-shadow: 0 3px 10px rgba(77, 77, 77, 0.5);
   border-bottom: 1px solid #fefefe;
   transition: background-color 200ms linear;
 }
 .navbar-shippii .nav-item {
   font-size: 1rem;
 }
+.navbar-shippii .show {
+  padding: 4px;
+  background-color: #4A4A4A;
+  border-radius: 8px;
+}
 
 .scrolled {
-  background: #4A4A4A !important;
+  background-color: #4A4A4A !important;
 }
 
 .hero-shippii {
@@ -267,16 +273,17 @@ footer {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .hero-shippii {
-    height: 85vh !important;
+    height: 75vh !important;
+    padding-top: 120px;
   }
   .container {
     padding: 0 20px;
   }
   .big-text {
-    font-size: 30px;
+    font-size: 24px;
   }
   .subtext-hero {
-    font-size: 18px;
+    font-size: 16px;
   }
   .shippii-btn-primary {
     font-size: 16px;
