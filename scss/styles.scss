@@ -2,6 +2,8 @@
 
 body,
 html {
+    width: 100%;
+    height: 100%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings:
@@ -155,19 +157,34 @@ hr.divider-green {
 }
 
 // NAVIGATION
-.navbar {
-    background-color: transparent !important;
-    border-bottom: 1px solid --white;
+.navbar-shippii {
+    background: transparent;
+    border-bottom: 1px solid #fefefe;
+    transition: background-color 200ms linear;
 
     .nav-item {
         font-size: 1rem;
     }
 }
 
+.scrolled {
+    background: #4A4A4A !important;
+}
+
 // HERO
 .hero-shippii {
     background-image: url('../assets/background/hero-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     // top: 0;
+    height: 100vh;
+}
+
+//ABOUT
+.img-about {
+    height: 96px;
+    width: auto;
 }
 
 // FEATURED
@@ -261,4 +278,83 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     padding: 64px 0;
+}
+
+.subject-table {
+    width: 262px;
+}
+
+// MOBILE VIEW
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .hero-shippii {
+        height: 85vh !important;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .big-text {
+        font-size: 30px;
+    }
+
+    .subtext-hero {
+        font-size: 18px;
+    }
+
+    .shippii-btn-primary {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .default-body {
+        font-size: 14px;
+    }
+
+    .default-title {
+        font-size: 16px;
+    }
+
+    .img-about {
+        height: 48px;
+    }
+
+    .featured .icon-about {
+        height: 36px;
+        width: auto;
+    }
+
+    .featured .align-items-center {
+        align-items: start !important;
+    }
+
+    .service-1 .obj-fit {
+        width: 75% !important;
+    }
+
+    .service-2 .obj-fit {
+        width: 75% !important;
+    }
+
+    .icon-sm {
+        width: 36px;
+        height: auto;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .subject-table {
+        width: max-content;
+    }
+
+    .img-contact {
+        width: 75% !important;
+    }
 }

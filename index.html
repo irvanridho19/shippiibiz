@@ -18,37 +18,37 @@
 </head>
 
 <body>
-  <!-- Hero -->
-  <section class="hero-shippii">
-    <nav class="navbar navbar-expand-lg p-3">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/logo/logo-white.png" alt="Logo ShippiiBIZ" style="height: 48px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto d-flex align-items-center">
-            <li class="nav-item mx-2">
-              <a class="nav-link shippii-text-white active" aria-current="page"
-                href="https://shippiibiz.africa">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link shippii-text-white" href="#about">About Us</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link shippii-text-white" href="#services">Our Services</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="btn shippii-btn-secondary shippii-text-white" href="#contact">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg p-2 fixed-top navbar-shippii navbar-fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo/logo-white.png" alt="Logo ShippiiBIZ" style="height: 48px;">
+      </a>
+      <button class="navbar-toggler shippii-text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          <li class="nav-item mx-2">
+            <a class="nav-link shippii-text-white active" aria-current="page" href="https://shippiibiz.africa">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link shippii-text-white" href="#about">About Us</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link shippii-text-white" href="#services">Our Services</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn shippii-btn-secondary shippii-text-white" href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div class="container d-flex align-items-center vh-100">
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-shippii d-flex align-items-center">
+    <div class="container">
       <div class="row d-flex align-items-center" data-aos="fade-right">
         <div class="col-lg-8 col-12">
           <div class="big-text shippii-text-white">
@@ -70,12 +70,12 @@
   <section class="featured" id="about">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 col-6">
+        <div class="col-lg-6 col-12">
           <div class="section-title shippii-text-black text-center">
             About Us
           </div>
           <div class="mt-4 text-center">
-            <img src="assets/logo/logo-black.png" alt="Logo Shippii Black" style="height: 96px;">
+            <img src="assets/logo/logo-black.png" alt="Logo Shippii Black" class="img-about">
           </div>
         </div>
       </div>
@@ -105,11 +105,11 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-lg-6 col-6 mt-3">
+        <div class="col-lg-6 col-12 mt-3">
           <div class="box border-orange">
             <div class="box-content">
               <div class="d-flex align-items-center">
-                <img src="assets/icons/benefit-1.png" alt="Icon">
+                <img src="assets/icons/benefit-1.png" alt="Icon" class="icon-about">
                 <div class="mx-3">
                   <div class="default-title shippii-text-black">
                     Flexible Affordable Pricing
@@ -126,11 +126,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-6 mt-3">
+        <div class="col-lg-6 col-12 mt-3">
           <div class="box border-green">
             <div class="box-content">
               <div class="d-flex align-items-center">
-                <img src="assets/icons/benefit-2.png" alt="Icon">
+                <img src="assets/icons/benefit-2.png" alt="Icon" class="icon-about">
                 <div class="mx-3">
                   <div class="default-title shippii-text-black">
                     Reliable Transportation
@@ -147,11 +147,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-6 mt-3">
+        <div class="col-lg-6 col-12 mt-3">
           <div class="box border-green">
             <div class="box-content">
               <div class="d-flex align-items-center">
-                <img src="assets/icons/benefit-3.png" alt="Icon">
+                <img src="assets/icons/benefit-3.png" alt="Icon" class="icon-about">
                 <div class="mx-3">
                   <div class="default-title shippii-text-black">
                     Efficient Customs Clearance
@@ -168,11 +168,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-6 mt-3">
+        <div class="col-lg-6 col-12 mt-3">
           <div class="box border-orange">
             <div class="box-content">
               <div class="d-flex align-items-center">
-                <img src="assets/icons/benefit-4.png" alt="Icon">
+                <img src="assets/icons/benefit-4.png" alt="Icon" class="icon-about">
                 <div class="mx-3">
                   <div class="default-title shippii-text-black">
                     Exceptional Customer Support & Tracking
@@ -217,7 +217,7 @@
   <section class="service-1" id="services">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-7 col-12">
+        <div class="col-lg-7 col-12 mb-4">
           <div class="section-title shippii-text-black">
             Our Services
           </div>
@@ -235,7 +235,7 @@
             ship parcels on an ad-hoc basis.
           </div>
         </div>
-        <div class="col-lg-5 col-12">
+        <div class="col-lg-5 col-12 text-center">
           <img src="assets/image/flexi-image.png" alt="Services" class="w-100 obj-fit">
         </div>
       </div>
@@ -248,13 +248,13 @@
       </div>
       <div class="row mt-4 align-items-center">
         <div class="col-lg-5">
-          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit">
+          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit d-none d-sm-block">
         </div>
         <div class="col-lg-7 col-12">
           <div class="box border-default">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/flexi-1.png" alt="Icons Flexi">
-              <div class="default-title color-green">
+              <img src="assets/icons/flexi-1.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-green mx-2">
                 1. Sign Up
               </div>
             </div>
@@ -266,8 +266,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/flexi-2.png" alt="Icons Flexi">
-              <div class="default-title color-green">
+              <img src="assets/icons/flexi-2.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-green mx-2">
                 2. Shipment Booking
               </div>
             </div>
@@ -279,8 +279,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/flexi-3.png" alt="Icons Flexi">
-              <div class="default-title color-green">
+              <img src="assets/icons/flexi-3.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-green mx-2">
                 3. Invoicing
               </div>
             </div>
@@ -291,8 +291,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/flexi-4.png" alt="Icons Flexi">
-              <div class="default-title color-green">
+              <img src="assets/icons/flexi-4.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-green mx-2">
                 4. Collection and Transportation
               </div>
             </div>
@@ -340,7 +340,7 @@
             <tbody>
               <tr>
                 <td rowspan="2" class="section-title shippii-text-black"
-                  style="vertical-align: middle; text-align: center; width: 260px;">Actual <br />Weight</td>
+                  style="vertical-align: middle; text-align: center;" class="subject-table">Actual <br />Weight</td>
                 <td class="section-title color-green">0,1 to 10 Kgs</td>
                 <td class="section-title color-green">E470</td>
               </tr>
@@ -370,7 +370,7 @@
             <tbody>
               <tr>
                 <td rowspan="2" class="section-title shippii-text-black"
-                  style="vertical-align: middle; text-align: center; width: 260px;">Volumetric <br />Weight</td>
+                  style="vertical-align: middle; text-align: center;" class="subject-table">Volumetric <br />Weight</td>
                 <td class="section-title color-green">0,1 to 10 Kgs</td>
                 <td class="section-title color-green">E470</td>
               </tr>
@@ -431,7 +431,7 @@
             <tbody>
               <tr>
                 <td rowspan="2" class="section-title shippii-text-black"
-                  style="vertical-align: middle; text-align: center; width: 260px;">Actual <br />Weight</td>
+                  style="vertical-align: middle; text-align: center;" class="subject-table">Actual <br />Weight</td>
                 <td class="section-title color-orange">0,1 to 10 Kgs</td>
                 <td class="section-title color-orange">E640</td>
               </tr>
@@ -461,7 +461,7 @@
             <tbody>
               <tr>
                 <td rowspan="2" class="section-title shippii-text-black"
-                  style="vertical-align: middle; text-align: center; width: 260px;">Volumetric <br />Weight</td>
+                  style="vertical-align: middle; text-align: center;" class="subject-table">Volumetric <br />Weight</td>
                 <td class="section-title color-orange">0,1 to 10 Kgs</td>
                 <td class="section-title color-orange">E640</td>
               </tr>
@@ -504,7 +504,7 @@
   <section class="service-2">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-7 col-12">
+        <div class="col-lg-7 col-12 mb-4">
           <div class="section-title shippii-text-white">
             Our Services
           </div>
@@ -522,7 +522,7 @@
             ensuring a reliable and efficient shipping process.
           </div>
         </div>
-        <div class="col-lg-5 col-12">
+        <div class="col-lg-5 col-12 text-center">
           <img src="assets/image/monthly-image.png" alt="Services" class="w-100 obj-fit">
         </div>
       </div>
@@ -535,13 +535,13 @@
       </div>
       <div class="row mt-4">
         <div class="col-lg-5">
-          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit rounded">
+          <img src="assets/image/how-it-works.png" alt="How It Works Image" class="w-100 obj-fit rounded d-none d-sm-block">
         </div>
         <div class="col-lg-7 col-12">
           <div class="box border-default">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/monthly-1.png" alt="Icons Flexi">
-              <div class="default-title color-orange">
+              <img src="assets/icons/monthly-1.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-orange mx-2">
                 1. Choose a package
               </div>
             </div>
@@ -553,8 +553,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/monthly-2.png" alt="Icons Flexi">
-              <div class="default-title color-orange">
+              <img src="assets/icons/monthly-2.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-orange mx-2">
                 2. Sign Up
               </div>
             </div>
@@ -566,8 +566,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/monthly-3.png" alt="Icons Flexi">
-              <div class="default-title color-orange">
+              <img src="assets/icons/monthly-3.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-orange mx-2">
                 3. Monthly Payment
               </div>
             </div>
@@ -578,8 +578,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/monthly-4.png" alt="Icons Flexi">
-              <div class="default-title color-orange">
+              <img src="assets/icons/monthly-4.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-orange mx-2">
                 4. Booking a Shipment
               </div>
             </div>
@@ -591,8 +591,8 @@
           </div>
           <div class="box border-default mt-3">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/monthly-5.png" alt="Icons Flexi">
-              <div class="default-title color-orange">
+              <img src="assets/icons/monthly-5.png" alt="Icons Flexi" class="icon-sm">
+              <div class="default-title color-orange mx-2">
                 5. Collection and Transportation
               </div>
             </div>
@@ -775,8 +775,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-12">
-          <img src="assets/image/contact-us.png" alt="Contact Image" class="w-100">
+        <div class="col-lg-6 col-12 mt-4 text-center">
+          <img src="assets/image/contact-us.png" alt="Contact Image" class="w-100 img-contact">
         </div>
       </div>
     </div>
@@ -817,6 +817,7 @@
     AOS.init();
   </script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar-scroll.js"></script>
   <script src="js/script.js"></script>
 </body>
 
